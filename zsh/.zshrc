@@ -8,7 +8,7 @@ export ZSH="/Users/luukvankooten/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="dracula"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -73,7 +73,12 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+export ZPLUG_HOME=/usr/local/opt/zplug
+source $ZPLUG_HOME/init.zsh
 
+# Plugins
+zplug 'zplug/zplug', hook-build:'zplug --self-manage'
+zplug "dracula/zsh", as:theme
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment

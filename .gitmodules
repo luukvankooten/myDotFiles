@@ -1,3 +1,6 @@
 [submodule "tmux/tpm"]
 	path = tmux/.tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
+[submodule "brew/tmux/.tmux/plugins/tmux-dracula"]
+	path = brew/tmux/.tmux/plugins/tmux-dracula
+	url = https://github.com/dracula/tmux.git

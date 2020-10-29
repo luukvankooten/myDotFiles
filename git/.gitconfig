@@ -1,0 +1,6 @@
+[user]
+	name = luukvankooten
+	email = luukvankooten@gmail.com
+[core]
+	autocrlf = input
+	excludesfile = ~/.gitingore-global

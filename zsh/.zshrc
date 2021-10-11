@@ -1,17 +1,19 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=/usr/local/bin:$HOME/.cargo/bin:$PATH
+export PATH=$HOME/Library/Python/3.8/bin:/usr/local/bin:$HOME/.cargo/bin:/usr/local/sbin:$HOME/.dotnet/tools:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh.sh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="dracula"
+ZSH_THEME=dracula
 
 # User configuration
 export ITERM_ENABLE_SHELL_INTEGRATION_WITH_TMUX=YES
+export CLICOLOR=1
+export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 export EDITOR="vim"
 #Zplug
 export ZPLUG_HOME=/usr/local/opt/zplug
@@ -19,9 +21,10 @@ source $ZPLUG_HOME/init.zsh
 
 # Plugins
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
-zplug "dracula/zsh", as:theme
 zplug "plugins/git", from:oh-my-zsh
+zplug "dracula/zsh", as:theme
 zplug "plugins/colored-man-pages", from:oh-my-zsh
+zplug "zsh-users/zsh-syntax-highlighting", defer:2
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
@@ -36,3 +39,6 @@ zplug load
 # Aliases
 alias zshconfig="$EDITOR ~/.zshrc"
 alias ohmyzsh="$EDITOR ~/.oh-my-zsh"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+

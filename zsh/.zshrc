@@ -1,6 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/Library/Python/3.8/bin:/usr/local/bin:$HOME/.cargo/bin:/usr/local/sbin:$HOME/.dotnet/tools:$PATH
 
+zstyle ':omz:update' mode auto
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh.sh"
 
@@ -25,6 +26,7 @@ zplug "plugins/git", from:oh-my-zsh
 zplug "dracula/zsh", as:theme
 zplug "plugins/colored-man-pages", from:oh-my-zsh
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
+zplug "plugins/asdf",   from:oh-my-zsh
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
@@ -42,3 +44,10 @@ alias ohmyzsh="$EDITOR ~/.oh-my-zsh"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+###-end-npm-completion-###
+export PIP_USER=no# The following lines were added by compinstall
+zstyle :compinstall filename '/Users/luukvankooten/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall

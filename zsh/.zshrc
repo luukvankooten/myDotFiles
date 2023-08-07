@@ -1,6 +1,3 @@
-# If you come from bash you might have to change your $PATH.
-export PATH=$HOME/Library/Python/3.8/bin:/usr/local/bin:$HOME/.cargo/bin:/usr/local/sbin:$HOME/.dotnet/tools:$PATH
-
 zstyle ':omz:update' mode auto
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh.sh"
@@ -17,9 +14,8 @@ export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 export EDITOR="vim"
 #Zplug
-export ZPLUG_HOME=/usr/local/opt/zplug
+export ZPLUG_HOME=/opt/homebrew/opt/zplug
 source $ZPLUG_HOME/init.zsh
-
 # Plugins
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 zplug "plugins/git", from:oh-my-zsh
@@ -42,10 +38,6 @@ zplug load
 alias zshconfig="$EDITOR ~/.zshrc"
 alias ohmyzsh="$EDITOR ~/.oh-my-zsh"
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-###-end-npm-completion-###
-export PIP_USER=no# The following lines were added by compinstall
 zstyle :compinstall filename '/Users/luukvankooten/.zshrc'
 
 autoload -Uz compinit

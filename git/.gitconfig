@@ -4,3 +4,5 @@
 [core]
 	autocrlf = input
 	excludesfile = ~/.gitingore-global
+[url "https://git.profects.com/"]
+	insteadOf = git@git.profects.com:

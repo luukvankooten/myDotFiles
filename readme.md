@@ -9,7 +9,7 @@ install: [homebrew](https://brew.sh/)
 Run the following commands:
 - `$ git clone https://github.com/luukvankooten/myDotFiles.git ~/.dotfiles`
 - `$ brew bundle install --file=~/.dotfiles/brew/.Brewfile`
-- `$ (cd ~/.dotfiles && stow vim zsh)`
+- `$ (cd ~/.dotfiles && stow vim zsh git)`
 
 ## TODO'S:
 

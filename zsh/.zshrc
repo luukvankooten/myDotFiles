@@ -40,7 +40,7 @@ alias ohmyzsh="$EDITOR ~/.oh-my-zsh"
 
 zstyle :compinstall filename '/Users/luukvankooten/.zshrc'
 
-export PATH="/usr/local/opt/openssl@1.1/bin:$PATH
+export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 
 autoload -Uz compinit
 compinit

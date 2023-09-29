@@ -1,7 +1,6 @@
 tap "homebrew/bundle"
 brew "cask"
 brew "mas"
-brew "openssh"
 brew "openssl@1.1"
 brew "stow"
 brew "zplug"

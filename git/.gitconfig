@@ -6,3 +6,5 @@
 	excludesfile = ~/.gitingore-global
 [url "https://git.profects.com/"]
 	insteadOf = git@git.profects.com:
+	name = luukvankooten
+	email = luuk.van.kooten@profects.com
